@@ -1,0 +1,223 @@
+# 根据项目需要启用或注释掉相应的部分
+# Uncomment or comment out sections based on your project needs
+
+##################
+# General Rules  #
+##################
+
+# Ignore the entire `folder` directory and everything inside it
+folder/
+
+# Ignore all files in the `folder` directory, but not the subdirectories
+folder/*
+
+# Ignore specific file and file extensions
+filename.suffix         # Ignore this specific file
+*.suffix                # Ignore all files ending with `.suffix`
+
+# Force tracking of specific files even if ignored by previous rules
+!folder/file
+
+# Ignore all files starting with `temp_`
+temp_*
+
+
+##################
+# C/C++ Rules    #
+##################
+
+# Prerequisites
+*.d
+
+# Object files and compiled binaries
+*.o
+*.ko
+*.obj
+*.elf
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Shared objects and dynamic/static libraries
+*.so
+*.so.*
+*.dll
+*.dylib
+*.lib
+*.a
+*.la
+*.lo
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Debug and kernel module files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+
+##################
+# Java Rules     #
+##################
+
+# Compiled class and log files
+*.class
+*.log
+
+# BlueJ and J2ME files
+*.ctxt
+.mtj.tmp/
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+
+##################
+# Python Rules   #
+##################
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+*.egg-info/
+.installed.cfg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+coverage.xml
+.hypothesis/
+.pytest_cache/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+ENV/
+env.bak/
+venv.bak/
+
+
+##################
+# Node.js Rules  #
+##################
+
+node_modules/
+npm-debug.log
+yarn-error.log
+
+
+####################
+# IDEs and Editors #
+####################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# VSCode
+.vscode/
+.history/
+
+# PyCharm
+.idea/
+*.xcuserdatad
+
+# Spyder and Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+
+#####################
+# OS and Temp Files #
+#####################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
